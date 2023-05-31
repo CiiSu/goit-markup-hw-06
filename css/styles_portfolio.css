@@ -344,3 +344,64 @@ footer {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.newsletter-footer {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-left: 78px;
+    padding-bottom: 20px;
+}
+
+.input-footer {
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    margin-left: 78px;
+    background: #2F303A;
+    pointer-events: none;
+}
+
+.placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    margin: 15px 295px 15px 16px;
+}
+
+.newsletter-footer-button {
+    background: #2196F3;
+    color: var(--main-white);
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px;
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin-left: 12px;
+}
+
+.icon-newsletter-fotter {
+    margin-left: 24px;
+}
+
+.newsletter {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-left: 32px;
+}
