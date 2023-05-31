@@ -205,20 +205,23 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     width: 528px;
-    height: 581px;
+    min-height: 581px;
+        top: 50%;
+            left: 50%;
 }
 
 .modal-close {
     position: relative;
-    margin: 8px 8px 543px 490px;
-    background-color: var(--main-white);
+    background-color: var(--white);
     cursor: pointer;
-    border-radius: 50%;
-    background: #FFFFFF;
-    border: 1px solid rgba(0, 0, 0, 0.1);
     width: 2em;
     height: 2em;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    left: 237px;
+    top: 8px;
 }
+
 
 .backdrop {
     display: flex;
@@ -230,8 +233,151 @@ ul {
     bottom: 0;
 }
 
+.display-modal {
+    width: 448px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 2px;
+}
+
+.modal-h4 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-black);
+    width: 448px;
+}
+
+.modal-label-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    width: 24px;
+    height: 14px;
+    margin-block: 12px 4px;
+
+}
+
+.modal-name {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.modal-name:hover {
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.modal-label-tel {
+    width: 58px;
+    height: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-top: 54px; 
+    
+}
+
+.modal-tel {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    width: 448px;
+    height: 40px;
+    margin-top: 4px;
+}
+.modal-tel:hover  {
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.modal-label-mail {
+    width: 41px;
+    height: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-top: 54px;
+}
+
+.modal-email {
+    width: 448px;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+}
+
+.modal-email:hover {
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.modal-label-feedback {
+    width: 60px;
+    height: 14px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: #757575;
+    margin-top: 54px;
+}
+
+.modal-text {
+    width: 448px;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    resize: none;
+}
+
+.modal-text:hover {
+    border-color: rgba(33, 150, 243, 1);
+}
+
+.form-field {
+    margin-top: 149px;
+}
 
 
+.form-label {
+    width: 395px;
+    height: 24px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.modal-button {
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    color: #FFFFFF;
+    margin: 30px 124px;
+    cursor: pointer;
+}
 /* MainSection - LoremIpsum - Icons */
 
 .empty-slot {
