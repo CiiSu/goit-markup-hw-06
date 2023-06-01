@@ -15,7 +15,7 @@
     --border-color: #ECECEC;
     --background-color-icon: #F5F4FA;
     --icon-fill-color: #afb1b8;
-
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .container {
@@ -206,8 +206,8 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
     width: 528px;
     min-height: 581px;
-        top: 50%;
-            left: 50%;
+    top: 50%;
+    left: 50%;
 }
 
 .modal-close {
@@ -234,7 +234,7 @@ ul {
 }
 
 .display-modal {
-    width: 448px;
+    width: 460px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,7 +263,21 @@ ul {
     width: 24px;
     height: 14px;
     margin-block: 12px 4px;
+}
 
+.label-icon-name {
+    position:relative
+}
+
+.icon-name-modal {
+    position: absolute;
+    margin-block: 14px;
+    margin-left: 12px;
+}
+
+.modal-label-name:hover {
+    cursor: pointer;
+    fill: rgba(33, 150, 243, 1);
 }
 
 .modal-name {
@@ -272,14 +286,17 @@ ul {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-top: 4px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: var(--cubic-bezier);
 }
 
 .modal-name:hover {
     border-color: rgba(33, 150, 243, 1);
 }
 
-.modal-label-tel {
-    width: 58px;
+.modal-label-phone {
+    width: 40px;
     height: 14px;
     font-style: normal;
     font-weight: 400;
@@ -287,8 +304,18 @@ ul {
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
-    margin-top: 54px; 
-    
+    margin-top: 50px;
+}
+
+.label-icon-phone {
+    position: relative;
+}
+
+
+.icon-phone-modal {
+    position: absolute;
+    margin-block: 14px;
+    margin-left: 12px;  
 }
 
 .modal-tel {
@@ -298,12 +325,18 @@ ul {
     height: 40px;
     margin-top: 4px;
 }
-.modal-tel:hover  {
+
+.modal-label-phone:hover {
+    cursor: pointer;
+    fill: rgba(33, 150, 243, 1);
+}
+
+.modal-tel:hover {
     border-color: rgba(33, 150, 243, 1);
 }
 
 .modal-label-mail {
-    width: 41px;
+    width: 32px;
     height: 14px;
     font-style: normal;
     font-weight: 400;
@@ -311,7 +344,17 @@ ul {
     line-height: 14px;
     letter-spacing: 0.01em;
     color: #757575;
-    margin-top: 54px;
+    margin-top: 50px;
+}
+
+.label-icon-mail {
+    position: relative;
+}
+
+.icon-mail-modal {
+    position: absolute;
+    margin-block: 14px;
+    margin-left: 12px;
 }
 
 .modal-email {
@@ -320,6 +363,11 @@ ul {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     margin-top: 4px;
+}
+
+.modal-label-mail:hover {
+    cursor: pointer;
+    fill: rgba(33, 150, 243, 1);
 }
 
 .modal-email:hover {
@@ -345,14 +393,23 @@ ul {
     border-radius: 4px;
     margin-top: 4px;
     resize: none;
+    padding: 12px 16px
 }
+
 
 .modal-text:hover {
     border-color: rgba(33, 150, 243, 1);
 }
 
-.form-field {
-    margin-top: 149px;
+textarea::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    width: 416px;
+    height: 96px;
 }
 
 
@@ -365,7 +422,9 @@ ul {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 140px;
 }
+
 
 .modal-button {
     width: 200px;
@@ -785,3 +844,16 @@ footer {
     margin-left: 32px;
 }
 
+input::placeholder {
+    width: 47px;
+    height: 20px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
